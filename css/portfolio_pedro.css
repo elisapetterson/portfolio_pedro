@@ -1,1 +1,55 @@
-/* Coloque as suas regras de css aqui embaixo */
+/* ABOUT */
+
+
+#about {
+	background-color: #f2f2f2;	
+	height:auto;
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	left: 0px;
+	margin: 0px;
+	width: 300px;
+}
+
+h1 {
+	font-family: "Roboto", sans-serif;
+	font-size: 40px;
+	font-weight: 300;
+	text-align: center;
+	color: #808080;
+
+}
+
+p {
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: left;
+	color: #808080;
+	line-height: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
+
+/* CAROUSEL */
+
+.tcycle { 
+	width: 620px; 
+	height: auto;
+	margin-left: 300px; 
+	border: 0px;
+
+}
+
+img { 
+	width: 100% 
+}
+
+
+
+
+
+/* FOTOS */
+
