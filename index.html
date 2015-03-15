@@ -11,15 +11,20 @@
 
         <link rel="stylesheet" type="text/css" href="icons/flaticon.css">
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-        <script src="http://malsup.github.io/jquery.tcycle.js"></script>
+        <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Acme">
+        <link rel=stylesheet href="site.css">
+        <link rel=stylesheet href="demo-slideshow.css">
+        <style>.adsbygoogle { display: block; margin:auto }</style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script src="http://malsup.github.io/jquery.cycle2.js"></script>
+        <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>if (screen.width < 640)  document.write('<style>.adsbygoogle { display: none }</style>');</script>
     
     </head>
     
     <body>
 
     <!-- ABOUT !-->
-
 
         <div id="about">
      
@@ -40,19 +45,37 @@
         </div>
 
     <!-- CAROUSEL !-->
-            
-    <div class=tcycle data-speed=1000>
-        <img src="img/arq_1.jpg" width=620>
-        <img src="img/arq_2.jpg" width=620>
-        <img src="img/arq_3.jpg" width=620>
-        <img src="img/arq_4.jpg" width=620>
-        <img src="img/arq_5.jpg" width=620>
-        <img src="img/arq_6.jpg" width=620>
-        <img src="img/arq_7.jpg" width=620>
-        <img src="img/arq_8.jpg" width=620>
-        <img src="img/arq_9.jpg" width=620>
-    </div>          
+        <script src="http://malsup.github.io/jquery.cycle2.scrollVert.js"></script>
 
+        <style> 
+        .external { position: static }
+        .external > * { margin: 0 5px }
+        .cycle-pager { display: block; }
+
+        .example-pager { text-align: center; width: 100%; z-index: 500; top: 10px; overflow: hidden; }
+        .example-pager span { font-size: 50px; width: 16px; height: 16px; display: inline-block; color: #ddd; }
+        .example-pager span.cycle-pager-active { color: #D69746;}
+        .example-pager > * { cursor: pointer;}
+        </style>
+
+        <div class="cycle-slideshow" 
+            data-cycle-fx=scrollHorz
+            data-cycle-timeout=0
+            data-cycle-pager="#adv-custom-pager"
+            data-cycle-pager-template="<a href=#><img src='{{src}}' width=20 height=20></a>">
+        
+            <img src="img/arq_1.jpg" >
+            <img src="img/arq_2.jpg" >
+            <img src="img/arq_3.jpg" >
+            <img src="img/arq_4.jpg" >
+            <img src="img/arq_5.jpg" >
+            <img src="img/arq_6.jpg" >
+            <img src="img/arq_7.jpg" >
+            <img src="img/arq_8.jpg">
+            <img src="img/arq_9.jpg" >
+        </div>          
+
+        <div id=adv-custom-pager class="center external"></div>
     
     </body>
 </html>
